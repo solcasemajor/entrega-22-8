@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Elijo leer</title>
+    <!-- Link Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+    <!--Link CSS-->
+    <link rel="stylesheet" href="style.css">
+
+  </head>
+  
+  <body>
+    <header>
+      <!--Navbar-->
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="img/logoElijoLeer.png" alt="logo" class="logoPrincipal">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav ">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/novedades.html">Novedades</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/ofertas.html">Ofertas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/libros.html">Libros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+  <h1 class="text-center mb-4">Tienda de libros</h1>
+
+<!--Carrousel-->
+<section class="carru">
+    <div id="carouselExampleAutoplaying" class="carousel slide container-fluid" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/piladelibros.jpeg" class="d-block w-100" alt="libros">
+        </div>
+        <div class="carousel-item">
+          <img src="img/biblio.jpeg" class="d-block w-100" alt="imagen biblioteca">
+        </div>
+        <div class="carousel-item">
+          <img src="img/libros.jpeg" class="d-block w-100" alt="libros">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+</section>
+ <!--Cards-->
+<main class="contenidoPrincipal container-lg">
+  <div class="row ">
+
+    <div class="col col-lg-4 col-12 col-sm-6 text-center mb-3">
+      <div class="card h-100">
+        <img src="img/erich-fromm.png" class="card-img-top" alt="portada del libro">
+        <div class="card-body">
+          <h5 class="card-title">El arte de escuchar - Erich Fromm</h5>
+          <p class="card-text">Los textos publicados por primera vez en este volumen no son un manual de terapéutica psicoanalítica, ni sirven para suplir la falta de testimonios de Erich Fromm sobre la llamada técnica psicoanalítica, sino que están principalmente dedicados a ofrecer información sobre el Fromm terapeuta y su forma de trato con el hombre "doliente" de nuestro tiempo: una relación terapéutica acaba tomando forma gracias a su capacidad de percepción de los problemas fundamentales del hombre y, sobre todo, de su parte inconsciente. Para Fromm sobre todo el psicoanálisis era un arte: el arte de escuchar sin miedo, con simpatía y amor.</p>
+          <a href="#" class="btn btn-primary">Comprar</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col col-lg-4 col-12 col-sm-6 text-center mb-3">
+      <div class="card h-100">
+        <img src="img/GarciaMarquez.png" class="card-img-top" alt="portada del libro">
+        <div class="card-body">
+          <h5 class="card-title">Cien años de soledad - Gabriel García Marquez</h5>
+          <p class="card-text">Entre la boda de José Arcadio Buendía con Amelia Iguarán hasta la maldición de Aureliano Babilonia transcurre todo un siglo. Cien años de soledad para una estirpe única, fantástica, capaz de fundar una ciudad tan especial como Macondo y de engendrar niños con cola de cerdo. En medio, una larga docena de personajes dejarán su impronta a las generaciones venideras, que tendrán que lidiar con un mundo tan complejo como sencillo.</p>
+          <a href="#" class="btn btn-primary">Comprar</a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="col col-lg-4 col-12 col-sm-6 text-center mb-3">
+      <div class="card h-100">
+        <img src="img/Marx.png" class="card-img-top" alt="portada del libro">
+        <div class="card-body">
+          <h5 class="card-title">Manuscritos - Marx</h5>
+          <p class="card-text">Los "Manuscritos" sobre economía y filosofía, escritos en 1844, no fueron publicados en vida de Karl Marx (1818-1883) y permanecieron inéditos hasta casi cincuenta años después de su fallecimiento. La edición de esos borradores en 1932 supuso una verdadera revolución en los estudios marxianos y un acicate para la crítica de los enfoques economicistas de la historia; desde entonces, las discusiones entre el "joven Marx" y el "Marx maduro" han alimentado una polémica interminable sobre las líneas de continuidad o los puntos de ruptura de su pensamiento.</p>
+          <a href="#" class="btn btn-primary">Comprar</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col col-lg-4 col-12 col-sm-6 text-center mb-3">
+      <div class="card h-100">
+        <img src="img/FiloAmartillazos1.png" class="card-img-top" alt="portada del libro">
+        <div class="card-body">
+          <h5 class="card-title">Filosofía a martillazos (tomo I) - Darío Sztajnszrajber</h5>
+          <p class="card-text">Esta extraordinaria aproximación a grandes temas y grandes autores —de Platón a Derrida, de Nietzsche a Marx, de San Pablo a Roberto Esposito— lleva al lector no especializado en filosofía, animadamente, con toques de humor y los desvíos propios de las conversaciones, hacia las complejidades de un saber que se brinda así a pensar la vida cotidiana. Una travesía fascinante por cuestiones claves que es, a la vez, una introducción y un examen profundo</p>
+          <a href="#" class="btn btn-primary">Comprar</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col col-lg-4 col-12 col-sm-6 text-center mb-3">
+      <div class="card h-100">
+        <img src="img/Filoen11frases.png" class="card-img-top" alt="portada del libro">
+        <div class="card-body">
+          <h5 class="card-title">Filosofía en 11 frases - Darío Sztajnszrajber</h5>
+          <p class="card-text">Darío Sztajnszrajber se propone sacar a la filosofía de los formatos que la hacen excluyente. Al hacerlo nos lleva a una conversación alucinada y alucinante con once ideas clásicas, tan pequeñas como para caber en un tuit y a la vez tan interminables como las búsquedas existenciales.
+            Incómodo y complejo como su materia misma, este libro inclasificable —es ensayo filosófico, y es también novela— consagra a su autor como un explorador impertinente. Sztajnszrajber puede explicar y a la vez contradecir a filósofos como Aristóteles, Descartes, Marx, Nietzsche o Foucault e invitarnos a perdernos en la riqueza de sus ideas.</p>
+          <a href="#" class="btn btn-primary">Comprar</a>
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="col col-lg-4 col-12 col-sm-6 text-center mb-3">
+      <div class="card h-100">
+        <img src="img/Lemonde.png" class="card-img-top" alt="portada del libro">
+        <div class="card-body">
+          <h5 class="card-title">El choque de barbaries</h5>
+          <p class="card-text">Traducido a once idiomas, este libro enfrenta la tesis del "choque de civilizaciones" acuñada por Samuel P. Huntington, a la del "choque de barbaries": la terrorista y la de la guerra, que se alimentan y refuerzan mutuamente. Su autor, Gilbert Achcar, docente universitario de origen libanés, indaga en las características históricamente inéditas de la hegemonía política mundial de Estados Unidos tras la Guerra Fría y analiza los orígenes del fenómeno Bin Laden, sus relaciones con el establishment estadounidense y su composición social, así como el peso y la finalidad del integrismo islámico y de sus grupos terroristas. Actualizado con un capítulo posterior a los atentados del 11 de septiembre­ de 2001, la intervención en Afganistán y la invasión de Irak</p>
+          <a href="#" class="btn btn-primary">Comprar</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+ 
+</main>
+
+  <!--mapa-->
+  <section class="mapa container rows mb-3">
+    <h2 class:"col-lg-12">Nuestra sucursal:</h2>
+    <iframe width="600" height="450" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3172.905849637541!2d-59.12855679043725!3d-37.32105780592078!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95911fed39e19dc7%3A0xa3e00dffe134ecf3!2sSarmiento%201365%2C%20B7001%20Tandil%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1688913074513!5m2!1ses!2sar" allowfullscreen="" style="border: 0px currentColor; border-image: none;" referrerpolicy="no-referrer-when-downgrade" loading="lazy" class="col-lg-12"></iframe>
+  </section>
+
+
+  <!--Footer-->
+  <footer>
+    <nav class="navbar navbar-expand-lg justify-content-end">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="img/logoElijoLeer.png" alt="logo" class="logoPrincipal">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav ">
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.instagram.com/elijo.leer_/">
+                <img src="img/instagram-icono.png" alt="icono de ig">
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJqVwLrPKmSnnwMnRdJCvFgnwGMHLNdvLVfgtLplPCNpmBgMggvBqSXQrwgwFNkSZCpXNFg">
+                <img src="img/gmail-icono.png" alt="icono gmail">
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://api.whatsapp.com/message/4E6Q6QYJMTDJM1?autoload=1&amp;app_absent=0"><img src="img/whatsapp-icono.png" alt="icono wp">
+              </a>
+            </li>
+          </ul>
+      </div>
+    </nav>
+  </footer>
+   
+
+<!--JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  </body>
+</html>
