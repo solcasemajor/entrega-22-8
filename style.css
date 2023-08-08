@@ -20,6 +20,10 @@ header nav ul {
     font-size: 22px;
     font-weight: bold;
 }
+.nav-link:hover{
+    color: blueviolet;
+    font-size: 24px;
+}
 
 h1{
     color: #674188;
@@ -64,4 +68,9 @@ footer nav ul img{
  .nav-link img{
 width: 50px;
  }
-
+ footer .nav-link:hover{
+    width: 80px;
+ }
+.icono:hover{
+    width: 80px;
+}
