@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap");
+.carru img {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: auto;
+}
+
+.contacto img {
+  width: 5%;
+  margin: 25px;
+}
+
+.icono:hover {
+  width: 80px;
+}
+
+html {
+  font-family: "Libre Baskerville", serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header nav .logoPrincipal {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 40%;
+}
+header nav ul {
+  list-style-type: none;
+  color: black;
+  font-size: 22px;
+  font-weight: bold;
+}
+header nav .nav-link:hover {
+  color: blueviolet;
+  font-size: 24px;
+}
+
+h1 {
+  color: #674188;
+}
+
+.carru img {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: auto;
+}
+
+h2 {
+  font-size: 1.5rem;
+  color: #674188;
+  text-align: center;
+}
+
+.contenidoPrincipal ul {
+  list-style-type: none;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+}
+.contenidoPrincipal img {
+  width: 250px;
+  justify-content: space-between;
+}
+
+footer nav .container .logoPrincipal {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 40%;
+}
+footer nav ul li {
+  list-style-type: none;
+}
+footer nav ul li .nav-link img {
+  width: 50px;
+}
+footer nav ul li .nav-link:hover {
+  width: 80px;
+}
+
+/*# sourceMappingURL=estilosass.css.map */

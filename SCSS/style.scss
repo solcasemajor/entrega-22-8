@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap');
+
+@import "partials/index.scss";
+@import "partials/variables.scss";
+@import "partials/contacto.scss";
+
+
+html{
+    font-family: 'Libre Baskerville', serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    nav{
+        .logoPrincipal{
+            @include flexbox (row, flex-end, 40%)
+        }
+        ul {
+            list-style-type: none;
+            color: black;
+            font-size: 22px;
+            font-weight: bold
+        }
+        .nav-link:hover{
+            color: blueviolet;
+            font-size: 24px;
+        }
+    }
+}
+
+h1{
+        color: $colorlila;
+    }
+
+.carru img{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto; 
+    }
+h2{
+        font-size: 1.5rem;
+        color: $colorlila;
+        text-align: center;
+    }
+
+.contenidoPrincipal{
+    ul{
+        list-style-type: none;
+        margin-top: 20px;
+        display: flex;
+        flex-direction: row;
+    }
+    img{
+        width: 250px;
+        justify-content: space-between;
+    }
+}
+
+footer{
+    nav{
+        .container{
+            .logoPrincipal{
+               @include flexbox(row, flex-end, 40%)
+            }
+        }
+        ul{
+            li{
+                list-style-type: none;
+
+                .nav-link{
+                    img{
+                        width: 50px;
+                    }
+                }
+                .nav-link:hover{
+                    width: 80px;
+                }
+         }
+        }
+    }
+}
