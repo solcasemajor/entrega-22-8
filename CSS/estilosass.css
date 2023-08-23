@@ -1,21 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap");
-.carru img {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  height: auto;
-}
-
-.contacto img {
-  width: 5%;
-  margin: 25px;
-}
-
-.icono:hover {
-  width: 80px;
-}
 
 html {
+  overflow-x: hidden;
   font-family: "Libre Baskerville", serif;
   box-sizing: border-box;
   margin: 0;
@@ -43,28 +29,80 @@ h1 {
   color: #674188;
 }
 
-.carru img {
-  display: flex;
-  flex-direction: row;
+.contacto img{
+  width: 5%;
+  margin: 25px;
+}
+.icono:hover{
+  width: 80px;
+}
+
+.card {
+  width: 250px;
+  padding: 0.8em;
+  border-radius: 1rem;
+  position: relative;
+  overflow: visible;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.card-img {
+  height: 40%;
   width: 100%;
-  height: auto;
+  border-radius: 0.5rem;
+  transition: 0.3s ease;
+}
+
+.card-info {
+  padding-top: 10%;
+}
+
+svg {
+  width: 20px;
+  height: 20px;
+}
+
+.card-footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+  border-top: 1px solid #ddd;
+}
+
+/*Text*/
+.text-title {
+  font-weight: 500;
+  font-size: 1.2em;
+  line-height: 1.5;
+}
+
+.text-body {
+  font-size: 0.9em;
+  padding-bottom: 10px;
+}
+
+/*Button*/
+.card-button {
+  border: 1px solid #252525;
+  display: flex;
+  padding: 0.3em;
+  cursor: pointer;
+  border-radius: 50px;
+  transition: 0.3s ease-in-out;
+}
+
+/*Hover*/
+.card-button:hover {
+  border: 1px solid #674188;
+  background-color: violet;
 }
 
 h2 {
   font-size: 1.5rem;
   color: #674188;
   text-align: center;
-}
-
-.contenidoPrincipal ul {
-  list-style-type: none;
-  margin-top: 20px;
-  display: flex;
-  flex-direction: row;
-}
-.contenidoPrincipal img {
-  width: 250px;
-  justify-content: space-between;
 }
 
 footer nav .container .logoPrincipal {

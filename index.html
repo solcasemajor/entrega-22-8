@@ -7,9 +7,13 @@
     <!-- Link Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 
+    <!-- Link AOS css-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <!--Link CSS-->
     <link rel="stylesheet" href="css/estilosass.css">
-
+    
   </head>
   
   <body>
@@ -48,107 +52,155 @@
 
   <h1 class="text-center mb-4">Tienda de libros</h1>
 
-<!--Carrousel-->
-<section class="carru">
-    <div id="carouselExampleAutoplaying" class="carousel slide container-fluid" data-bs-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="img/piladelibros.jpeg" class="d-block w-100" alt="libros">
-        </div>
-        <div class="carousel-item">
-          <img src="img/biblio.jpeg" class="d-block w-100" alt="imagen biblioteca">
-        </div>
-        <div class="carousel-item">
-          <img src="img/libros.jpeg" class="d-block w-100" alt="libros">
-        </div>
-        <div class="carousel-item">
-          <img src="img/paraviajarlejos.jpeg" class="d-block w-100" alt="imagen+frase">
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
+<!--Carrusel-->
+
+<div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner carru">
+    <div class="carousel-item active">
+      <img src="img/piladelibros.jpeg"  class="d-block w-100" alt="...">
     </div>
-</section>
+    <div class="carousel-item">
+      <img src="img/paraviajarlejos.jpeg"  class="d-block w-100" alt="libros+frase">
+    </div>
+    <div class="carousel-item">
+      <img src="img/biblio.jpeg" class="d-block w-100" alt="imagen biblioteca">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+
+
+
+
  <!--Cards-->
 <main class="contenidoPrincipal container-lg">
-  <div class="row ">
+<div class="row">
 
-    <div class="col col-lg-4 col-12 col-sm-6 text-center mb-3">
-      <div class="card h-100">
-        <img src="img/erich-fromm.png" class="card-img-top" alt="portada del libro">
-        <div class="card-body">
-          <h5 class="card-title">El arte de escuchar - Erich Fromm</h5>
-          <p class="card-text">Los textos publicados por primera vez en este volumen no son un manual de terapéutica psicoanalítica, ni sirven para suplir la falta de testimonios de Erich Fromm sobre la llamada técnica psicoanalítica, sino que están principalmente dedicados a ofrecer información sobre el Fromm terapeuta y su forma de trato con el hombre "doliente" de nuestro tiempo: una relación terapéutica acaba tomando forma gracias a su capacidad de percepción de los problemas fundamentales del hombre y, sobre todo, de su parte inconsciente. Para Fromm sobre todo el psicoanálisis era un arte: el arte de escuchar sin miedo, con simpatía y amor.</p>
-          <a href="#" class="btn btn-primary">Comprar</a>
-        </div>
+<div class="col col-lg-4 col-12 col-sm-6 text-center mb-3">
+  <div class="card w-100" data-aos="fade-right">
+    <div class="card-img"><img src="img/erich-fromm.png" class="card-img-top" alt="portada del libro">
+    </div>
+    <div class="card-info">
+      <p class="text-title">El arte de escuchar - Erich Fromm</p>
+      <p class="text-body">Una relación terapéutica acaba tomando forma gracias a su capacidad de percepción de los problemas fundamentales del hombre y, sobre todo, de su parte inconsciente.</p>
+    </div>
+  <div class="card-footer">
+    <span class="text-title">$3.000</span>
+    <div class="card-button">
+      <svg class="svg-icon" viewBox="0 0 20 20">
+        <path d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z"></path>
+        <path d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z"></path>
+        <path d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z"></path>
+      </svg></div>
+    </div>
+  </div>
+</div>
+
+<div class="col col-lg-4 col-12 col-sm-6 text-center mb-3">
+  <div class="card w-100" data-aos="fade-up">
+    <div class="card-img"><img src="img/GarciaMarquez.png" class="card-img-top" alt="portada del libro">
+    </div>
+    <div class="card-info">
+      <p class="text-title">Cien años de soledad - Gabriel García Marquez</p>
+      <p class="text-body">Cien años de soledad para una estirpe única, fantástica, capaz de fundar una ciudad tan especial como Macondo y de engendrar niños con cola de cerdo.</p>
+    </div>
+    <div class="card-footer">
+      <span class="text-title">$6.000</span>
+      <div class="card-button">
+      <svg class="svg-icon" viewBox="0 0 20 20">
+        <path d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z"></path>
+        <path d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z"></path>
+        <path d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z"></path>
+      </svg></div>
+    </div>
+  </div>
+</div>
+
+<div class="col col-lg-4 col-12 col-sm-6 text-center mb-3">
+<div class="card w-100" data-aos="fade-left">
+  <div class="card-img"><img src="img/Marx.png" class="card-img-top" alt="portada del libro"></div>
+  <div class="card-info">
+    <p class="text-title">Manuscritos - Marx</p>
+    <p class="text-body">Los "Manuscritos" sobre economía y filosofía permanecieron inéditos hasta casi cincuenta años después de su fallecimiento.</p>
+  </div>
+  <div class="card-footer">
+  <span class="text-title">$3000</span>
+  <div class="card-button">
+    <svg class="svg-icon" viewBox="0 0 20 20">
+      <path d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z"></path>
+      <path d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z"></path>
+      <path d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z"></path>
+    </svg></div>
+  </div>
+</div>
+</div>
+
+<div class="col col-lg-4 col-12 col-sm-6 text-center mb-3">
+  <div class="card w-100" data-aos="fade-right">
+    <div class="card-img"><img src="img/FiloAmartillazos1.png" class="card-img-top" alt="portada del libro"></div>
+    <div class="card-info">
+      <p class="text-title">Filosofía a martillazos (tomo I) - Darío Sztajnszrajber</p>
+      <p class="text-body">Esta extraordinaria aproximación a grandes temas y grandes autores lleva al lector no especializado en filosofía hacia las complejidades de un saber que se brinda así a pensar la vida cotidiana.</p>
+    </div>
+    <div class="card-footer">
+    <span class="text-title">$7000</span>
+    <div class="card-button">
+      <svg class="svg-icon" viewBox="0 0 20 20">
+        <path d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z"></path>
+        <path d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z"></path>
+        <path d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z"></path>
+      </svg></div>
+    </div>
+  </div>
+</div>
+
+  <div class="col col-lg-4 col-12 col-sm-6 text-center mb-3">
+    <div class="card w-100" data-aos="fade-down">
+      <div class="card-img"><img src="img/Filoen11frases.png" class="card-img-top" alt="portada del libro"></div>
+      <div class="card-info">
+        <p class="text-title">Filosofía en 11 frases - Darío Sztajnszrajber</p>
+        <p class="text-body">Este libroconsagra a su autor como un explorador impertinente. Sztajnszrajber puede explicar y a la vez contradecir a filósofos como Aristóteles, Descartes, Marx, Nietzsche o Foucault e invitarnos a perdernos en la riqueza de sus ideas.</p>
+      </div>
+      <div class="card-footer">
+      <span class="text-title">$7000</span>
+      <div class="card-button">
+        <svg class="svg-icon" viewBox="0 0 20 20">
+          <path d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z"></path>
+          <path d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z"></path>
+          <path d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z"></path>
+        </svg></div>
       </div>
     </div>
+  </div>
 
     <div class="col col-lg-4 col-12 col-sm-6 text-center mb-3">
-      <div class="card h-100">
-        <img src="img/GarciaMarquez.png" class="card-img-top" alt="portada del libro">
-        <div class="card-body">
-          <h5 class="card-title">Cien años de soledad - Gabriel García Marquez</h5>
-          <p class="card-text">Entre la boda de José Arcadio Buendía con Amelia Iguarán hasta la maldición de Aureliano Babilonia transcurre todo un siglo. Cien años de soledad para una estirpe única, fantástica, capaz de fundar una ciudad tan especial como Macondo y de engendrar niños con cola de cerdo. En medio, una larga docena de personajes dejarán su impronta a las generaciones venideras, que tendrán que lidiar con un mundo tan complejo como sencillo.</p>
-          <a href="#" class="btn btn-primary">Comprar</a>
+      <div class="card w-100" data-aos="fade-left">
+        <div class="card-img"><img src="img/Lemonde.png" class="card-img-top" alt="portada del libro"></div>
+        <div class="card-info">
+          <p class="text-title">El choque de barbaries</p>
+          <p class="text-body">Gilbert Achcar indaga en las características históricamente inéditas de la hegemonía política mundial de Estados Unidos tras la Guerra Fría y analiza los orígenes del fenómeno Bin Laden.</p>
         </div>
-      </div>
-    </div>
-    
-    <div class="col col-lg-4 col-12 col-sm-6 text-center mb-3">
-      <div class="card h-100">
-        <img src="img/Marx.png" class="card-img-top" alt="portada del libro">
-        <div class="card-body">
-          <h5 class="card-title">Manuscritos - Marx</h5>
-          <p class="card-text">Los "Manuscritos" sobre economía y filosofía, escritos en 1844, no fueron publicados en vida de Karl Marx (1818-1883) y permanecieron inéditos hasta casi cincuenta años después de su fallecimiento. La edición de esos borradores en 1932 supuso una verdadera revolución en los estudios marxianos y un acicate para la crítica de los enfoques economicistas de la historia; desde entonces, las discusiones entre el "joven Marx" y el "Marx maduro" han alimentado una polémica interminable sobre las líneas de continuidad o los puntos de ruptura de su pensamiento.</p>
-          <a href="#" class="btn btn-primary">Comprar</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="col col-lg-4 col-12 col-sm-6 text-center mb-3">
-      <div class="card h-100">
-        <img src="img/FiloAmartillazos1.png" class="card-img-top" alt="portada del libro">
-        <div class="card-body">
-          <h5 class="card-title">Filosofía a martillazos (tomo I) - Darío Sztajnszrajber</h5>
-          <p class="card-text">Esta extraordinaria aproximación a grandes temas y grandes autores —de Platón a Derrida, de Nietzsche a Marx, de San Pablo a Roberto Esposito— lleva al lector no especializado en filosofía, animadamente, con toques de humor y los desvíos propios de las conversaciones, hacia las complejidades de un saber que se brinda así a pensar la vida cotidiana. Una travesía fascinante por cuestiones claves que es, a la vez, una introducción y un examen profundo</p>
-          <a href="#" class="btn btn-primary">Comprar</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="col col-lg-4 col-12 col-sm-6 text-center mb-3">
-      <div class="card h-100">
-        <img src="img/Filoen11frases.png" class="card-img-top" alt="portada del libro">
-        <div class="card-body">
-          <h5 class="card-title">Filosofía en 11 frases - Darío Sztajnszrajber</h5>
-          <p class="card-text">Darío Sztajnszrajber se propone sacar a la filosofía de los formatos que la hacen excluyente. Al hacerlo nos lleva a una conversación alucinada y alucinante con once ideas clásicas, tan pequeñas como para caber en un tuit y a la vez tan interminables como las búsquedas existenciales.
-            Incómodo y complejo como su materia misma, este libro inclasificable —es ensayo filosófico, y es también novela— consagra a su autor como un explorador impertinente. Sztajnszrajber puede explicar y a la vez contradecir a filósofos como Aristóteles, Descartes, Marx, Nietzsche o Foucault e invitarnos a perdernos en la riqueza de sus ideas.</p>
-          <a href="#" class="btn btn-primary">Comprar</a>
-        </div>
-      </div>
-    </div>
-
-    
-    <div class="col col-lg-4 col-12 col-sm-6 text-center mb-3">
-      <div class="card h-100">
-        <img src="img/Lemonde.png" class="card-img-top" alt="portada del libro">
-        <div class="card-body">
-          <h5 class="card-title">El choque de barbaries</h5>
-          <p class="card-text">Traducido a once idiomas, este libro enfrenta la tesis del "choque de civilizaciones" acuñada por Samuel P. Huntington, a la del "choque de barbaries": la terrorista y la de la guerra, que se alimentan y refuerzan mutuamente. Su autor, Gilbert Achcar, docente universitario de origen libanés, indaga en las características históricamente inéditas de la hegemonía política mundial de Estados Unidos tras la Guerra Fría y analiza los orígenes del fenómeno Bin Laden, sus relaciones con el establishment estadounidense y su composición social, así como el peso y la finalidad del integrismo islámico y de sus grupos terroristas. Actualizado con un capítulo posterior a los atentados del 11 de septiembre­ de 2001, la intervención en Afganistán y la invasión de Irak</p>
-          <a href="#" class="btn btn-primary">Comprar</a>
+        <div class="card-footer">
+        <span class="text-title">$7000</span>
+        <div class="card-button">
+          <svg class="svg-icon" viewBox="0 0 20 20">
+            <path d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z"></path>
+            <path d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z"></path>
+            <path d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z"></path>
+          </svg></div>
         </div>
       </div>
     </div>
 
   </div>
- 
 </main>
 
   <!--mapa-->
@@ -192,5 +244,11 @@
 
 <!--JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-  </body>
+
+<!-- AOS -->
+<script>
+AOS.init()
+</script>
+
+</body>
 </html>
